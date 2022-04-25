@@ -11,7 +11,7 @@ body{
     color: white;
     font-size: 19px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 750px;;
+    height: auto;;
     display: flex;
     flex-direction: column;
     gap:5%;
@@ -68,20 +68,22 @@ body{
 }   
 
 #profileContainer{
-    border: 5px solid blue;
+  /*  border: 5px solid blue;*/
     display: grid;
     grid-template-rows: 1fr 3fr;
+    
 }
 
 #navBar{
-    border: 5px solid greenyellow;
+   /* border: 5px solid greenyellow;*/
     background-color: ffffff;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    box-shadow: 2px 5px 4px #88888885;;
 }
 
         #containerBuscador{
-            border:5px solid rgb(32, 111, 32);
+            /*border:5px solid rgb(32, 111, 32);*/
             display: grid;
             grid-template-columns: 2fr 1fr;
             justify-content: space-evenly;
@@ -108,9 +110,10 @@ body{
 
                 #ContainerSubnav{
                     display: flex;
-                    justify-content:center;
+                    justify-content:right;
                     align-items: center;
                     gap: 25px;
+                    margin-right: 50px;
                 }
 
                         #nameProfile{
@@ -119,10 +122,7 @@ body{
                             font-size: 18px;
                         }
 
-                        #containerProfile{
-                            border:5px solid rgb(110, 181, 110);
-                        }
-
+                      
                         #circleProfile > #simsLogo{
                             border-radius: 100%;
                         }
@@ -132,8 +132,46 @@ body{
             border-radius: 100%;
         }
 
+        #containerProfile{
+            /*border:5px solid rgb(102, 46, 99);*/
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin-bottom: 15px;
+        }
+
+            #profileSpace{
+                display: flex;
+                justify-content: left;
+                margin-left: 25px;
+                align-items: center;
+                gap: 25px;
+            }
+
+                    #textProfile{
+                        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    }
+
+
+            #butonsContainer{
+                display: flex;
+                justify-content: right;
+                align-items: center;
+                gap: 25px;
+                margin-right: 20px;
+            }
+
+                    button{
+                        background-color: #1992D4;
+                        color: white;
+                        border: none;
+                        border-radius: 50px;
+                        width: 75px;
+                        height: 35px;
+                        font-size: 16px;
+                    }
+
 
 
 #mainInfo{
-    border:5px solid green;
+    /*border:5px solid green;*/
 }
